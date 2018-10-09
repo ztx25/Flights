@@ -1,0 +1,958 @@
+@font-face {
+  src: url("../fonts/pfdindisplaypro-bold.ttf");
+  font-family: PfBold;
+}
+
+@font-face {
+  src: url("../fonts/pfdindisplaypro-reg.ttf");
+  font-family: PfRegular;
+}
+
+@font-face {
+  src: url("../fonts/pfdindisplaypro-med.ttf");
+  font-family: PfMedium;
+}
+
+@font-face {
+  src: url("../fonts/pfdindisplaypro-thin.ttf");
+  font-family: PfThin;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.top {
+  width: 100vw;
+  background-image: url("../img/back1.png");
+  background-size: cover;
+}
+
+.navigation {
+  width: 100%;
+  padding: 40px 0 0 35%;
+  display: flex;
+  flex-direction: column;
+}
+
+.first {
+  width: 75%;
+  margin: 0 11% 35px 0;
+}
+
+.first ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.first a {
+  font-family: PfBold;
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #929292;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all .2s ease-out;
+}
+
+.first a:hover {
+  color: #a7d2db;
+}
+
+.second {
+  width: 71%;
+  margin: 0 11% 82px 0;
+}
+
+.second ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.second a {
+  height: 27px;
+  font-family: PfRegular;
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-family: PfMedium;
+  color: #929292;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all .2s ease-out;
+}
+
+.second a:hover {
+  color: #a7d2db;
+}
+
+.verticalLine {
+  height: 35px;
+  padding-top: 5px;
+  border-right: 1px solid #d9d9d9;
+}
+
+.btnAside {
+  padding: 16px 16px;
+  display: inline;
+  position: absolute;
+  right: 46px;
+  top: 280px;
+  background-color: #555555;
+  font-family: PfBold;
+  font-size: 12px;
+  color: #fff;
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(90deg);
+  writing-mode: tb-rl;
+}
+
+.btnAside a {
+  color: #fff;
+  text-decoration: none;
+}
+
+h1 {
+  margin: 0 0 2% 20px;
+  font-size: 80px;
+  font-family: PfRegular;
+  text-transform: uppercase;
+  color: #555555;
+  text-align: center;
+}
+
+.about {
+  width: 45%;
+  margin-left: 32%;
+  display: flex;
+  flex-direction: row;
+}
+
+.line {
+  width: 170px;
+  margin: 15px 20px 0 0;
+  border-top: 2px solid #555555;
+}
+
+.aboutFirst {
+  font-size: 15px;
+  font-family: PfMedium;
+  color: #555555;
+  line-height: 1.5;
+}
+
+.aboutEmpty {
+  font-size: 17px;
+  margin: 0 0 5% 20%;
+  width: 62%;
+  display: flex;
+  flex-direction: column;
+  font-family: PfThin;
+  line-height: 1.5;
+}
+
+.aboutEmpty a {
+  margin: 0 13% 4% 0;
+  text-align: right;
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 2.538;
+  text-decoration: underline;
+  font-family: PfBold;
+  letter-spacing: 3px;
+  color: #a7d2db;
+}
+
+.aboutEmpty span {
+  border: 5px solid transparent;
+  border-left: 5px solid #a7d2db;
+  display: inline-block;
+  width: 0;
+  height: 0;
+}
+
+.info {
+  width: 100%;
+  height: 300px;
+  background-color: #a7d2db;
+}
+
+.advantage {
+  margin: 6% 10% 6%;
+  display: flex;
+}
+
+.advantageList {
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.7;
+  color: #555555;
+}
+
+.up {
+  text-transform: uppercase;
+  font-family: PfBold;
+}
+
+.down {
+  width: 79%;
+  font-family: PfThin;
+  font-size: 17px;
+}
+
+.vertical {
+  margin-right: 10px;
+  display: inline;
+  height: 100px;
+  width: 70px;
+  font-family: PfBold;
+  font-size: 35px;
+  color: #fff;
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(90deg);
+  writing-mode: tb-rl;
+}
+
+.vertical span {
+  font-family: PfThin;
+}
+
+main {
+  width: 100vw;
+  background-image: url("../img/back2.png");
+  background-size: 100%;
+}
+
+.mainHead {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.actualFlights {
+  margin: 65px 0 15px 12px;
+  font-size: 35px;
+  text-transform: uppercase;
+  letter-spacing: 18px;
+  font-family: PfThin;
+  color: #7d7e7f;
+}
+
+.verticalLineSecond {
+  height: 37px;
+  margin: 0 0 10px;
+  border-right: 1px solid #9b9c9f;
+}
+
+.schedule {
+  font-family: PfBold;
+  text-transform: uppercase;
+  font-size: 48px;
+  color: #555555;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #a7d2db;
+}
+
+.airplaneList {
+  height: 120vh;
+  width: 100%;
+  margin: 7% 0 0 13%;
+  font-family: PfBold;
+  font-size: 17px;
+}
+
+.flight {
+  color: #555555;
+  display: flex;
+}
+
+.flight div {
+  padding: 2% 2% 0;
+  width: 250px;
+}
+
+.flight a {
+  color: #555555;
+  text-decoration: none;
+}
+
+.flight:hover a {
+  color: #a7d2db;
+}
+
+.flight:hover .select {
+  color: #a7d2db;
+}
+
+.flight:first-child div {
+  padding: 1% 2% 2%;
+  font-size: 19px;
+  border-bottom: 1px solid #d7d7d7;
+}
+
+.border {
+  border-right: 1px solid #d7d7d7;
+}
+
+.border:first-child {
+  width: 300px;
+}
+
+.btnOther {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.btnOther a {
+  margin-top: 25px;
+  display: inline-block;
+  padding: 20px 45px;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 4px;
+  font-family: PfBold;
+  text-decoration: none;
+  position: relative;
+  color: #555555;
+  background-color: #c4e5ec;
+  border: 1px solid #fff;
+}
+
+.btnOther span {
+  border: 5px solid transparent;
+  border-left: 5px solid #555555;
+  display: inline-block;
+  width: 0;
+  height: 0;
+}
+
+.popup {
+  width: 100%;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+}
+
+.popup .popup-content {
+  margin: 200px auto 0px;
+  width: 400px;
+  height: 240px;
+  padding: 10px;
+  position: relative;
+  background-color: #c5c5c5;
+  border-radius: 10px;
+  box-shadow: 0px 0px 40px #a7d2db;
+  font-family: PfBold;
+}
+
+.popup .popup-content .btnBuy {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 180px;
+  bottom: 0;
+  margin: auto;
+  height: 35px;
+  width: 80px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.popup .popup-content .btn {
+  position: absolute;
+  top: 0;
+  left: 100px;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: 35px;
+  width: 170px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.popup .popup-content a {
+  text-decoration: none;
+  color: #111;
+}
+
+#dateShow {
+  height: 20px;
+  width: 150px;
+  margin-left: 15px;
+  font-size: 15px;
+  text-align: center;
+  color: #060CF8FF;
+  position: absolute;
+  top: 31px;
+  left: 50px;
+}
+
+footer {
+  width: 100%;
+  height: 65%;
+  background-color: #1c1c1c;
+}
+
+.end {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.end .contactsTop {
+  margin-top: 65px;
+  font-size: 35px;
+  text-transform: uppercase;
+  letter-spacing: 18px;
+  font-family: PfThin;
+  color: #3b3b3b;
+}
+
+.end .verticalLineThird {
+  height: 37px;
+  margin: 15px 0 10px;
+  border-right: 1px solid #444444;
+}
+
+.contacts {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  font-family: PfMedium;
+  color: #464646;
+}
+
+.contacts span {
+  font-family: PfBold;
+  font-size: 24px;
+  letter-spacing: 0;
+  color: #7e7e7e;
+}
+
+.contactsUp {
+  letter-spacing: 3px;
+  font-size: 14px;
+}
+
+.fas, .far {
+  height: 20px;
+  font-size: 15px;
+  margin-right: 5px;
+  padding-top: 5px;
+}
+
+.fax {
+  margin-top: 25px;
+}
+
+.last {
+  width: 66%;
+  display: flex;
+  justify-content: space-between;
+  margin: 9% 0 0 17%;
+  color: #2d2d2d;
+}
+
+.last .fab {
+  font-size: 15px;
+  color: #4e4e4e;
+}
+
+@media (max-width: 999px) {
+  .navigation a {
+    font-size: 6px;
+  }
+  .verticalLine {
+    margin-top: 10px;
+    height: 20px;
+  }
+  h1 {
+    font-size: 48px;
+  }
+  .about {
+    width: 44%;
+    margin-left: 29%;
+  }
+  .line {
+    width: 140px;
+    margin: 15px 10px 0 0;
+  }
+  .aboutFirst {
+    font-size: 9.5px;
+  }
+  .aboutEmpty {
+    font-size: 10px;
+  }
+  .aboutEmpty a {
+    font-size: 8px;
+  }
+  .info {
+    height: 200px;
+  }
+  .advantage {
+    margin: 6% 10% 6% 14%;
+  }
+  .up {
+    font-size: 10px;
+  }
+  .down {
+    font-size: 10px;
+  }
+  .vertical {
+    height: 55px;
+    width: 27px;
+    font-size: 18px;
+  }
+  .actualFlights {
+    margin: 5% 0 15px 12px;
+    font-size: 18px;
+    letter-spacing: 13px;
+  }
+  .verticalLineSecond {
+    height: 20px;
+  }
+  .schedule {
+    font-size: 35px;
+  }
+  .airplaneList {
+    height: 90vh;
+    margin: 7% 0 0 19%;
+    font-size: 10px;
+  }
+  .flight div {
+    padding: 2% 2% 0;
+    width: 150px;
+  }
+  .border:first-child {
+    width: 160px;
+  }
+  .flight:first-child div {
+    font-size: 11px;
+  }
+  .end .contactsTop {
+    margin-top: 35px;
+    font-size: 22px;
+    letter-spacing: 16px;
+  }
+  .btnOther a {
+    padding: 10px 18px;
+    font-size: 7px;
+    letter-spacing: 4px;
+  }
+  .contacts {
+    font-size: 14px;
+  }
+  .contacts span {
+    font-size: 18px;
+  }
+  .contactsUp {
+    letter-spacing: 3px;
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .navigation a {
+    font-size: 7px;
+  }
+  .verticalLine {
+    margin-top: 10px;
+    height: 25px;
+  }
+  h1 {
+    font-size: 55px;
+  }
+  .about {
+    width: 42%;
+  }
+  .aboutFirst {
+    font-size: 10px;
+  }
+  .aboutEmpty {
+    font-size: 12px;
+  }
+  .aboutEmpty a {
+    font-size: 8px;
+  }
+  .info {
+    height: 220px;
+  }
+  .up {
+    font-size: 11px;
+  }
+  .down {
+    width: 79%;
+    font-size: 11px;
+  }
+  .vertical {
+    height: 60px;
+    width: 34px;
+    font-size: 20px;
+  }
+  .actualFlights {
+    font-size: 24px;
+    letter-spacing: 13px;
+  }
+  .verticalLineSecond {
+    height: 30px;
+  }
+  .schedule {
+    font-size: 40px;
+  }
+  .airplaneList {
+    height: 90vh;
+    margin: 7% 0 0 13%;
+    font-size: 12px;
+  }
+  .flight div {
+    padding: 2% 2% 0;
+    width: 195px;
+  }
+  .border:first-child {
+    width: 200px;
+  }
+  .flight:first-child div {
+    font-size: 14px;
+  }
+  .end .contactsTop {
+    margin-top: 35px;
+    font-size: 22px;
+    letter-spacing: 16px;
+  }
+  .contacts {
+    font-size: 14px;
+  }
+  .contacts span {
+    font-size: 20px;
+  }
+  .contactsUp {
+    letter-spacing: 3px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navigation a {
+    font-size: 9px;
+  }
+  h1 {
+    font-size: 70px;
+  }
+  .aboutEmpty {
+    font-size: 15px;
+  }
+  .about {
+    width: 44%;
+  }
+  .aboutFirst {
+    font-size: 13px;
+  }
+  .info {
+    height: 250px;
+  }
+  .up {
+    font-size: 14px;
+  }
+  .down {
+    width: 79%;
+    font-size: 14px;
+  }
+  .vertical {
+    height: 75px;
+    width: 45px;
+    font-size: 25px;
+  }
+  .airplaneList {
+    height: 90vh;
+    margin: 7% 0 0 13%;
+    font-size: 12px;
+  }
+  .flight div {
+    padding: 2% 2% 0;
+    width: 195px;
+  }
+  .border:first-child {
+    width: 200px;
+  }
+  .flight:first-child div {
+    font-size: 14px;
+  }
+  .end .contactsTop {
+    font-size: 30px;
+    letter-spacing: 18px;
+  }
+}
+
+@media (min-width: 1343px) {
+  h1 {
+    font-size: 70px;
+  }
+  .aboutFirst {
+    font-size: 15px;
+  }
+  .aboutEmpty {
+    font-size: 16px;
+  }
+  .info {
+    height: 265px;
+  }
+  .advantage {
+    margin: 6% 15% 6%;
+  }
+  .up {
+    font-size: 14px;
+  }
+  .down {
+    width: 79%;
+    font-size: 15px;
+  }
+  .vertical {
+    height: 70px;
+    width: 50px;
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .line {
+    width: 150px;
+    margin: 15px 10px 0 0;
+  }
+  .about {
+    width: 40%;
+  }
+  .aboutFirst {
+    font-size: 14px;
+  }
+  .info {
+    height: 280px;
+  }
+  .advantage {
+    margin: 6% 10% 0;
+  }
+  .up {
+    font-size: 14px;
+  }
+  .down {
+    width: 79%;
+    font-size: 16px;
+  }
+  .vertical {
+    height: 75px;
+    width: 49px;
+    font-size: 25px;
+  }
+  .actualFlights {
+    font-size: 35px;
+    letter-spacing: 18px;
+  }
+  .verticalLineSecond {
+    height: 37px;
+  }
+  .schedule {
+    font-size: 48px;
+  }
+  .airplaneList {
+    height: 120vh;
+    font-size: 17px;
+  }
+  .flight div {
+    padding: 2% 2% 0;
+    width: 250px;
+  }
+  .border:first-child {
+    width: 300px;
+  }
+  .flight:first-child div {
+    font-size: 19px;
+  }
+  .end .contactsTop {
+    font-size: 35px;
+    letter-spacing: 18px;
+  }
+}
+
+@media (min-width: 1545px) {
+  .aboutEmpty {
+    font-size: 18px;
+  }
+  .about {
+    width: 42%;
+  }
+  .up {
+    font-size: 16px;
+  }
+  .down {
+    font-size: 18px;
+  }
+  .vertical {
+    height: 85px;
+    width: 50px;
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1735px) {
+  .navigation {
+    padding: 55px 0 0 670px;
+  }
+  .first a {
+    font-size: 13px;
+  }
+  .second a {
+    font-size: 14px;
+  }
+  .btnAside {
+    padding: 30px 28px;
+    position: absolute;
+    right: 54px;
+    top: 260px;
+    font-size: 16px;
+  }
+  h1 {
+    margin: 0 0px 70px 50px;
+    font-size: 105px;
+  }
+  .about {
+    width: 46%;
+  }
+  .aboutFirst {
+    font-size: 21px;
+  }
+  .aboutEmpty {
+    font-size: 20px;
+    margin-left: 24%;
+    width: 54%;
+  }
+  .aboutEmpty a {
+    margin: 0 5% 4% 0;
+    font-size: 15px;
+  }
+  .info {
+    height: 400px;
+  }
+  .advantage {
+    margin: 8% 14% 0% 15%;
+    height: 50%;
+  }
+  .up {
+    font-size: 18px;
+  }
+  .down {
+    width: 80%;
+    font-size: 18px;
+  }
+  .vertical {
+    height: 100px;
+    width: 70px;
+    font-size: 35px;
+  }
+  .actualFlights {
+    margin: 65px 0 15px 12px;
+    font-size: 42px;
+    letter-spacing: 18px;
+  }
+  .schedule {
+    font-size: 62px;
+  }
+  .airplaneList {
+    height: 100vh;
+    margin: 7% 0 0 20%;
+    font-size: 20px;
+  }
+  .flight div {
+    padding: 2% 2% 0;
+    width: 300px;
+  }
+  .border:first-child {
+    width: 315px;
+  }
+  .border:first-child span {
+    width: 250px;
+  }
+  footer {
+    height: 50%;
+  }
+  .contacts {
+    width: 60%;
+  }
+  .contacts span {
+    margin-top: 10px;
+    font-size: 35px;
+  }
+  .contactsUp {
+    font-size: 14px;
+  }
+  .fas, .far {
+    height: 25px;
+    font-size: 20px;
+  }
+  .last {
+    width: 66%;
+    display: flex;
+    justify-content: space-between;
+    margin: 9% 0 0 17%;
+    color: #2d2d2d;
+  }
+  .last .fab {
+    font-size: 15px;
+    color: #4e4e4e;
+  }
+}
+
+@media (min-width: 1910px) {
+  .about {
+    width: 44%;
+  }
+  .aboutFirst {
+    font-size: 22px;
+  }
+  .advantage {
+    margin: 6% 14% 4% 16%;
+  }
+  .up {
+    font-size: 20px;
+  }
+  .down {
+    width: 79%;
+    font-size: 20px;
+  }
+  .vertical {
+    height: 100px;
+    width: 65px;
+    font-size: 35px;
+  }
+  .airplaneList {
+    height: 100vh;
+  }
+}
