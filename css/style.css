@@ -118,7 +118,6 @@ body {
   -moz-transform: rotate(90deg);
   -webkit-transform: rotate(180deg);
   -o-transform: rotate(90deg);
-  writing-mode: tb-rl;
 }
 
 .btnAside a {
@@ -225,7 +224,6 @@ h1 {
   -moz-transform: rotate(90deg);
   -webkit-transform: rotate(180deg);
   -o-transform: rotate(90deg);
-  writing-mode: tb-rl;
 }
 
 .vertical span {
@@ -410,7 +408,7 @@ main {
   margin-left: 15px;
   font-size: 15px;
   text-align: center;
-  color: #060CF8FF;
+  color: #060CF8;
   position: absolute;
   top: 31px;
   left: 50px;
@@ -576,7 +574,6 @@ footer {
     font-size: 18px;
   }
   .contactsUp {
-    letter-spacing: 3px;
     font-size: 12px;
   }
 }
