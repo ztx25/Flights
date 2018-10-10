@@ -225,6 +225,7 @@ h1 {
   -moz-transform: rotate(90deg);
   -webkit-transform: rotate(180deg);
   -o-transform: rotate(90deg);
+  writing-mode: tb-rl;
 }
 
 .vertical span {
@@ -417,7 +418,7 @@ main {
 
 footer {
   width: 100%;
-  height: 65%;
+  height: 55%;
   background-color: #1c1c1c;
 }
 
@@ -692,15 +693,15 @@ footer {
   }
   .airplaneList {
     height: 90vh;
-    margin: 7% 0 0 13%;
-    font-size: 12px;
+    margin: 7% 0 0 17%;
+    font-size: 13px;
   }
   .flight div {
     padding: 2% 2% 0;
-    width: 195px;
+    width: 200px;
   }
   .border:first-child {
-    width: 200px;
+    width: 204px;
   }
   .flight:first-child div {
     font-size: 14px;
@@ -750,7 +751,7 @@ footer {
     width: 40%;
   }
   .aboutFirst {
-    font-size: 14px;
+    font-size: 15px;
   }
   .info {
     height: 280px;
@@ -795,14 +796,20 @@ footer {
     font-size: 19px;
   }
   .end .contactsTop {
-    font-size: 35px;
+    font-size: 30px;
     letter-spacing: 18px;
   }
 }
 
 @media (min-width: 1545px) {
+  h1 {
+    font-size: 85px;
+  }
+  .aboutFirst {
+    font-size: 17px;
+  }
   .aboutEmpty {
-    font-size: 18px;
+    font-size: 19px;
   }
   .about {
     width: 42%;
@@ -817,6 +824,20 @@ footer {
     height: 85px;
     width: 50px;
     font-size: 30px;
+  }
+  .contacts {
+    width: 61%;
+  }
+  .contacts span {
+    margin-top: 10px;
+    font-size: 26px;
+  }
+  .contactsUp {
+    font-size: 14px;
+  }
+  .fas, .far {
+    height: 25px;
+    font-size: 20px;
   }
 }
 
@@ -839,7 +860,7 @@ footer {
   }
   h1 {
     margin: 0 0px 70px 50px;
-    font-size: 105px;
+    font-size: 95px;
   }
   .about {
     width: 46%;
@@ -857,7 +878,7 @@ footer {
     font-size: 15px;
   }
   .info {
-    height: 400px;
+    height: 380px;
   }
   .advantage {
     margin: 8% 14% 0% 15%;
@@ -890,7 +911,7 @@ footer {
   }
   .flight div {
     padding: 2% 2% 0;
-    width: 300px;
+    width: 290px;
   }
   .border:first-child {
     width: 315px;
@@ -905,22 +926,18 @@ footer {
     width: 60%;
   }
   .contacts span {
-    margin-top: 10px;
-    font-size: 35px;
+    font-size: 34px;
   }
   .contactsUp {
-    font-size: 14px;
+    font-size: 18px;
   }
   .fas, .far {
     height: 25px;
-    font-size: 20px;
+    font-size: 23px;
   }
   .last {
     width: 66%;
-    display: flex;
-    justify-content: space-between;
     margin: 9% 0 0 17%;
-    color: #2d2d2d;
   }
   .last .fab {
     font-size: 15px;
@@ -929,11 +946,14 @@ footer {
 }
 
 @media (min-width: 1910px) {
+  h1 {
+    font-size: 110px;
+  }
   .about {
     width: 44%;
   }
   .aboutFirst {
-    font-size: 22px;
+    font-size: 23px;
   }
   .advantage {
     margin: 6% 14% 4% 16%;
@@ -951,6 +971,26 @@ footer {
     font-size: 35px;
   }
   .airplaneList {
-    height: 100vh;
+    margin: 7% 0 0 20%;
+    font-size: 20px;
+  }
+  .flight div {
+    padding: 2% 2% 0;
+    width: 300px;
+  }
+  .border:first-child {
+    width: 320px;
+  }
+  .border:first-child span {
+    width: 250px;
+  }
+  .end .contactsTop {
+    margin-top: 65px;
+    font-size: 40px;
+    letter-spacing: 18px;
+  }
+  .end .verticalLineThird {
+    height: 37px;
+    margin: 15px 0 45px;
   }
 }
